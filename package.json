@@ -1,0 +1,12 @@
+{
+  "name": "rotina-da-rafa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Organizador pessoal de produção de conteúdo, com HTML semântico e sem dependências.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test",
+    "check": "node --check assets/js/app.js && node --check assets/js/model.js && node --check assets/js/storage.js"
+  }
+}

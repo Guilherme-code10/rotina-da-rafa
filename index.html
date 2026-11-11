@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#a64f65">
+  <meta name="description" content="Um espaço leve para organizar clientes, conteúdos e entregas.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Rotina da Rafa">
+  <title>Meu dia · Rotina da Rafa</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <aside class="sidebar" aria-label="Identidade e navegação">
+    <a class="brand" href="#hoje"><span class="brand-mark" aria-hidden="true">r.</span><span>rotina da rafa<small>um dia de cada vez</small></span></a>
+    <nav aria-label="Navegação principal" id="navigation"></nav>
+    <div class="sidebar-note"><span aria-hidden="true">♡</span><p>Mais espaço para criar.<br>Mais leveza para viver.</p></div>
+    <button class="text-button backup-trigger" type="button">Backup e dados</button>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span class="eyebrow">SEU ESPAÇO DE ORGANIZAÇÃO</span><button class="avatar backup-trigger" aria-label="Abrir backup e dados" type="button">R</button></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="page-footer">Feito para uma rotina mais leve <span aria-hidden="true">♡</span><span>Dados salvos neste navegador</span></footer>
+  </div>
+  <dialog id="editor" aria-labelledby="dialog-title"><form id="editor-form"><header class="dialog-header"><h2 id="dialog-title"></h2><button type="button" class="icon-button" data-close aria-label="Fechar formulário">×</button></header><div id="form-fields"></div><p class="form-error" role="alert" id="form-error"></p><footer class="dialog-actions"><button type="button" class="secondary" data-close>Cancelar</button><button type="submit" class="primary">Salvar</button></footer></form></dialog>
+  <dialog id="backup-dialog" aria-labelledby="backup-title"><header class="dialog-header"><h2 id="backup-title">Seus dados, com você</h2><button type="button" class="icon-button" data-close aria-label="Fechar backup">×</button></header><p>Esta versão salva tudo neste navegador. iPhone e iPad não sincronizam automaticamente. Exporte um backup para guardar ou transferir seus registros.</p><button type="button" class="primary" id="export">Exportar backup (.json)</button><hr><label for="import">Restaurar um backup</label><p class="muted">A restauração substitui os registros deste navegador. Antes, exporte os dados atuais.</p><input type="file" id="import" accept="application/json,.json"><p id="backup-error" role="alert"></p></dialog>
+  <div class="toast" role="status" aria-live="polite" id="toast" hidden></div>
+  <noscript>Ative o JavaScript para usar sua agenda. Seus dados permanecem no navegador.</noscript>
+</body>
+</html>
