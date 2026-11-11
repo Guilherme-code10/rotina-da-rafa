@@ -16,4 +16,4 @@ http.createServer(async(req,res)=>{
     res.writeHead(200,{'Content-Type':mime[extname(path)]||'application/octet-stream','Cache-Control':'no-store'});
     res.end(content);
   }catch{res.writeHead(404,{'Content-Type':'text/plain'}).end('Não encontrado');}
-}).listen(port,host,()=>console.log(`Rotina da Rafa: http://${host}:${port}`));
+}).listen(port,host,()=>console.log(`Brbeauty: http://${host}:${port}`));

@@ -1,4 +1,4 @@
-# Rotina da Rafa 🌷
+# Brbeauty 🌷
 
 Organizador de tarefas e produção de conteúdo com visual rosa, desenvolvido para iPhone, iPad e desktop. HTML semântico, CSS responsivo e JavaScript em módulos, sem bibliotecas externas ou etapa de build.
 
@@ -34,7 +34,7 @@ Para enviar com Git, dentro da pasta extraída:
 ```sh
 git init
 git add .
-git commit -m "Cria organizador Rotina da Rafa"
+git commit -m "Cria organizador Brbeauty"
 git branch -M main
 git remote add origin URL_DO_SEU_REPOSITORIO
 git push -u origin main

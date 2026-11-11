@@ -55,7 +55,7 @@ function historyPage() {
 }
 function render() {
   if(fatal)return;
-  const r=route();document.title=`${routes[r][0]} · Rotina da Rafa`;
+  const r=route();document.title=`${routes[r][0]} · Brbeauty`;
   $('#navigation').innerHTML=Object.entries(routes).map(([key,[label,i]])=>`<a class="nav-link" href="#${key}" ${r===key?'aria-current="page"':''}>${icon(i)}<span>${label}</span></a>`).join('');
   $('#main').innerHTML=({hoje:dashboard,clientes:clientsPage,producao:productionPage,historico:historyPage})[r]();
 }
@@ -105,7 +105,7 @@ $('#main').addEventListener('change',event=>{
 $('#export').addEventListener('click',()=>{
   if(fatal)return;
   const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
-  a.href=url;a.download=`rotina-da-rafa-backup-${today()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('Backup preparado. Guarde o arquivo em Arquivos.');
+  a.href=url;a.download=`brbeauty-backup-${today()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('Backup preparado. Guarde o arquivo em Arquivos.');
 });
 $('#import').addEventListener('change',async event=>{
   const file=event.target.files[0];if(!file)return;
